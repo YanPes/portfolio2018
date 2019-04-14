@@ -7,6 +7,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { DeepSpaceImagesComponent } from './deep-space-images/deep-space-images.component';
+
+
 
 @NgModule({
   declarations: [
@@ -14,11 +18,13 @@ import { ContactComponent } from './contact/contact.component';
     WelcomeComponent,
     WorkComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    DeepSpaceImagesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScrollToModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

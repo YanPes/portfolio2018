@@ -1,0 +1,126 @@
+<div class="container clearfix">
+
+    <!-- /WELCOME SECTION -->
+    <section id="project-welcome" class="clearfix">
+        <h1 class="text-center">Deep Space Images</h1>
+        <h3 class="text-center">A point cloud data visualisation using the image itself as database.</h3>
+    </section>
+    <!-- /WELCOME SECTION -->
+
+    <!-- INTRODUCTION SECTION -->
+    <section id="project-about" class="clearfix">
+        <div class="row section-heading justify-content-center">
+            <h3>Introduction</h3>
+        </div>
+        <div class="row section-content">
+            <div class="col-md-8 offset-md-2">
+                <p>
+                    The idea behind Deep Space Images came from working with raw data streams of cameras. The fact that an image basically is
+                    a container storing data made me curious about using this information as input for another purpose.
+                    <br>
+                    <br> I wanted to generate something new which represents the complexity of the actual data as well as
+                    keeping the look and feel of the original reference. So I decided to generate a point cloud system
+                    constrained by the image itself as database.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /INTRODUCTION SECTION -->
+
+    <!-- INTRODUCTION SECTION -->
+    <section id="project-about" class="clearfix">
+        <div class="row section-heading justify-content-center">
+            <h3>Result</h3>
+        </div>
+        <div class="row section-content">
+            <div class="col-md-12">
+                <img src="images/deep-space-images-front-01.jpg" alt="">
+                <img src="images/deep-space-images-persp-01.jpg" alt="">
+                <img src="images/deep-space-images-front-03.jpg" alt="">
+                <img src="images/deep-space-images-persp-03.jpg" alt="">
+                <img src="images/deep-space-images-front-05.jpg" alt="">
+                <img src="images/deep-space-images-persp-05.jpg" alt="">
+                <img src="images/deep-space-images-front-06.jpg" alt="">
+                <img src="images/deep-space-images-persp-06.jpg" alt="">
+                <img src="images/deep-space-images-front-10.jpg" alt="">
+                <img src="images/deep-space-images-persp-10.jpg" alt="">
+                <img src="images/deep-space-images-front-09.jpg" alt="">
+                <img src="images/deep-space-images-persp-09.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- /INTRODUCTION SECTION -->
+
+    <!-- HOW IT WORKS SECTION -->
+    <section id="project-about" class="clearfix">
+        <div class="row section-heading justify-content-center">
+            <h3>How it works</h3>
+        </div>
+        <div class="row section-content">
+            <div class="col-md-8 offset-md-2">
+                <p>
+                    The basic concept is to translate two-dimensional image information into the dimensional space. An image consists of a huge
+                    array of different values. Every pixel contains a unique position and color information. Since images
+                    are two-dimensional objects, it was necessary to create a third dimension. This was achieved by mapping
+                    the grey scale value of every pixel to the pixel position on the z-axis (black == minimal value,
+                    white == maximal value).
+                    <br>
+                    <br>The cube as a three-dimensional primitive consisting of several flat planes was the obvious choice
+                    as a representation for each pixel. Unfortunately, rendering that much geometry resulted in too many
+                    draw calls during runtime. I had to switch to flat planes directing to the viewer (object normals
+                    facing towards camera) to give the illusion of a cube while keeping the performance quite stable.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /HOW IT WORKS SECTION -->
+
+    <!-- CALCULATION SECTION -->
+    <section id="project-about" class="clearfix">
+        <div class="row section-heading justify-content-center">
+            <h3>Pixel calculation in detail</h3>
+        </div>
+        <div class="row section-content">
+            <div class="col-md-8 offset-md-2">
+                <p>
+                    The fundamental structure of an image is different from what we see on screen. An image is a huge row of numbers (array of
+                    integers). If you open a picture from your last holiday trip the computer splits the row into smaller
+                    pieces and stacks them underneath each other to generate a grid. The following graphic shows the
+                    process in detail.
+                </p>
+            </div>
+            <div class="row" style="margin-top: 50px">
+                    <div class="col-md-12">
+                        <img src="images/deep-space-images-calculation.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- /CALCULATION SECTION -->
+
+    <!-- CONCLUSION SECTION -->
+    <section id="project-about" class="clearfix">
+        <div class="row section-heading justify-content-center">
+            <h3>Conclusion</h3>
+        </div>
+        <div class="row section-content">
+            <div class="col-md-8 offset-md-2">
+                <p>
+                    This project is just a first grasp on what it possible by working with unconventional datasets. My mindset has slightly changed
+                    since I tried to be creative with image data. For me, generating visual elements with code is a fascinating
+                    subject in the world of programming and I will definitely create and learn more about this in the
+                    future.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /CONCLUSION SECTION -->
+
+
+    <!-- FOOTER SECTION -->
+    <footer id="footer" class="clearfix ">
+        <div class="row section-content justify-content-center">
+            <a href="">Back to main page.</a>
+        </div>
+    </footer>
+</div>
