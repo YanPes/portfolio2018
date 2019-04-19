@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { DeepSpaceImagesComponent } from './deep-space-images/deep-space-images.component';
+import { ProjectFilter } from './work/project-filter.pipe';
 
 
 
@@ -20,6 +21,7 @@ import { DeepSpaceImagesComponent } from './deep-space-images/deep-space-images.
     AboutComponent,
     ContactComponent,
     DeepSpaceImagesComponent,
+    ProjectFilter
   ],
   imports: [
     BrowserModule,
