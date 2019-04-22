@@ -1,4 +1,4 @@
-<section id="work" class="clearfix">
+<section id="work" class="clearfix section-content">
   <div class="row section-heading justify-content-center">
       <h3>Work</h3>
   </div>
@@ -10,7 +10,7 @@
       </div>
   </div>
   <div class="row section-content-card">
-      <div class="col-lg-4 col-md-4 col-12" *ngFor="let project of projects | filterProjects: displayed">
+      <div class="col-lg-4 col-md-6 col-12" *ngFor="let project of projects | filterProjects: displayed">
         <div class="card">
             <a class="mask">
               <img class="card-img-top" src={{project.thumbnail}}>
