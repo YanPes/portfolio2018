@@ -1,3 +1,4 @@
+<app-welcome></app-welcome>
 <section id="work" class="clearfix section-content">
   <div class="row section-heading justify-content-center">
       <h3>Work</h3>
@@ -12,7 +13,7 @@
   <div class="row section-content-card">
       <div class="col-lg-4 col-md-6 col-12" *ngFor="let project of projects | filterProjects: displayed">
         <div class="card">
-            <a class="mask">
+            <a routerLink="{{project.routerLink}}" class="mask">
               <img class="card-img-top" src={{project.thumbnail}}>
               <div class={{project.colorIndicator}}></div>
               <div class="card-info">
@@ -25,5 +26,7 @@
           </div>
       </div>
 </div>
-  
+
 </section>
+<app-about></app-about>
+<app-contact></app-contact>
