@@ -11,6 +11,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { DeepSpaceImagesComponent } from './deep-space-images/deep-space-images.component';
 import { ProjectFilter } from './work/project-filter.pipe';
 import { ElectrifyAestheticsComponent } from './electrify-aesthetics/electrify-aesthetics.component';
+import { BotuiComponent } from './botui/botui.component';
 
 
 
@@ -23,7 +24,8 @@ import { ElectrifyAestheticsComponent } from './electrify-aesthetics/electrify-a
     ContactComponent,
     DeepSpaceImagesComponent,
     ProjectFilter,
-    ElectrifyAestheticsComponent
+    ElectrifyAestheticsComponent,
+    BotuiComponent
   ],
   imports: [
     BrowserModule,
